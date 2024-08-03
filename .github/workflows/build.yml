@@ -52,8 +52,8 @@ jobs:
         file: ./TransactionsService/Dockerfile
         push: true        
         tags: |
-          devpraxis/daily-summary-service:latest
-          devpraxis/daily-summary-service:${{ env.GIT_SHA_SHORT }}        
+          devpraxis/transactions-service:latest
+          devpraxis/transactions-service:${{ env.GIT_SHA_SHORT }}        
       env:
         DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
         DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
